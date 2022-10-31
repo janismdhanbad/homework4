@@ -1,0 +1,59 @@
+body {
+    font-family: Poppins, sans-serif;
+  }
+
+header {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.nav_links{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+} 
+.card{
+    width: 100%;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+
+}
+.gallery img{
+    width: 100%;
+}
+img#logo{
+    flex-basis: 100%;
+    height: auto;
+}
+@media all and (min-width: 700px){
+
+    img#logo{
+        flex-basis: 400px;
+        height: auto;
+    }
+    .nav_links{
+        flex-direction: row;
+        justify-content: end;
+    
+        
+    }
+    header{
+        justify-content: space-between;
+    }
+    .pricing, .gallery{
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .card, .gallery img{
+        width: 400px;
+    }
+}
